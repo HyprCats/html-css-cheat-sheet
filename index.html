@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Cheat Sheet</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="greenblock" src="./Assets/CheatSheetHeader.png" alt="HTML and CSS Cheat Sheet">
+    </header>
+
+    <main>
+        <!--HTML-->
+        <h2>Contents (HTML)</h2>
+        
+        <!--Contents Table-->
+        <table class="htmltable">
+            <thead class="htmlthead">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Tag</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody class="htmltbody">
+                <tr>
+                    <td><a href="#headings">Headings</a></td>
+                    <td><span class="code">&lt;h1-6&gt;</span></td>
+                    <td>Bigger blocks of text, often used to organize information better</td>
+                </tr>
+                <tr>
+                    <td><a href="#paragraphs">Paragraphs</a></td>
+                    <td><span class="code">&lt;p&gt;</span></td>
+                    <td>Normal blocks of text. These are often used for larger amounts of text,
+                        hence the "paragraph" name
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#paragraphs">Line Breaks(br)</a></td>
+                    <td><span class="code">&lt;br&gt;</span></td>
+                    <td>Helps break up text, similar to when you press the enter key</td>
+                </tr>
+                <tr>
+                    <td><a href="#lists">Unordered lists and Ordered lists</a></td>
+                    <td><span class="code">&lt;ul&gt;</span> and <span class="code">&lt;ol&gt;</span></td>
+                    <td>Used to make bulleted lists or numbered lists; similar to how
+                        you would see them in Microsoft Word
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#images">Image</a></td>
+                    <td><span class="code">&lt;img/&gt;</span></td>
+                    <td>Used to add an image</td>
+                </tr>
+                <tr>
+                    <td><a href="#videos">Video</a></td>
+                    <td><span class="code">&lt;video&gt;</span></td>
+                    <td>Used to add a video</td>
+                </tr>
+                <tr>
+                    <td><a href="#div">div</a></td>
+                    <td><span class="code">&lt;div&gt;</span></td>
+                    <td>A meaningless element used to help stylize with CSS</td>
+                </tr>
+                <tr>
+                    <td><a href="#tables">Table</a></td>
+                    <td><span class="code">&lt;table&gt;</span></td>
+                    <td>Creates a table on the website</td>
+                </tr>
+                <tr>
+                    <td><a href="#semantic">Semantic HTML</a></td>
+                    <td><span class="code">&lt;head&gt;</span>, <span class="code">&lt;body&gt;</span>, etc.</td>
+                    <td>A library of elements that, while don't have any visual representation,
+                        help with organizing HTML code into sections, which is great for CSS
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#settingup">Starting up an HTML document</a></td>
+                    <td><span class="code">&lt;!DOCTYPE html&gt;</span></td>
+                    <td>Describes elements you need to start up an HTML document</td>
+                </tr>
+                <tr>
+                    <td><a href="#links">Links</a></td>
+                    <td><span class="code">&lt;a&gt;</span></td>
+                    <td>Creates a clickable link that will take the user somewhere else on the web</td>
+                </tr>
+                <tr>
+                    <td><a href="#htmlclasses">Classes and IDs</a></td>
+                    <td><span class="code">class=</span> or <span class="code">id=</span></td>
+                    <td>Used to help with styling for CSS</td>
+                </tr>
+                <tr>
+                    <td><a href="#commenting">Commenting</a></td>
+                    <td><span class="code">&lt;!----&gt;</span></td>
+                    <td>Allows the developer to create notes or make code unreadable by the computer</td>
+                </tr>
+                <tr>
+                    <td><a href="#organization">Keeping your HTML organized</a></td>
+                    <td>N/A</td>
+                    <td>Tips for keeping the code easily readable</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--CSS-->
+        <h2>Contents (CSS)</h2>
+
+        <!--Contents Table-->
+        <table class="csstable">
+            <thead class="cssthead">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Tag/Attribute</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody class="csstbody">
+                <tr>
+                    <td> <a href="#linkingcss">Linking the CSS to the HTML</a></td>
+                    <td><span class="code">&lt;link&gt;</span></td>
+                    <td>How to link the CSS to the HTML so the styling actually shows</td>
+                </tr>
+                <tr>
+                    <td> <a href="#selectors">Selectors</a></td>
+                    <td>N/A</td>
+                    <td>All you need to know about selecting things in CSS in order to apply a ruleset</td>
+                </tr>
+                <tr>
+                    <td> <a href="#cssclasses">Classes and IDs</a></td>
+                    <td><span class="code">.classes</span> and <span class="code">#ids</span></td>
+                    <td>Used to help with styling for CSS</td>
+                </tr>
+                <tr>
+                    <td> <a href="#typography">Typography</a></td>
+                    <td><span class="code">font-family</span>, <span class="code">font-weight</span>, etc.</td>
+                    <td>Everything about typography</td>
+                </tr>
+                <tr>
+                    <td> <a href="#colors">Color</a></td>
+                    <td><span class="code">hex</span>, <span class="code">rgb</span>, <span class="code">hsl</span></td>
+                    <td>Everything about color</td>
+                </tr>
+                <tr>
+                    <td> <a href="#backgroundimage">Background Image</a></td>
+                    <td><span class="code">background-image</span></td>
+                    <td>Changes the background image of an element</td>
+                </tr>
+                <tr>
+                    <td> <a href="#important">!important</a></td>
+                    <td>N/A</td>
+                    <td>The most specific identifier</td>
+                </tr>
+                <tr>
+                    <td> <a href="#boxmodel">The Box Model</a></td>
+                    <td><span class="code">padding</span>, <span class="code">margin</span>, <span class="code">border</span></td>
+                    <td>A model that the computer uses to position elements</td>
+                </tr>
+                <tr>
+                    <td> <a href="#position">Position</a></td>
+                    <td><span class="code">static</span>, <span class="code">variable</span>, <span class="code">absolute</span>, <span class="code">fixed</span>, <span class="code">sticky</span></td>
+                    <td>Determines how an element is placed within a page</td>
+                </tr>
+                <tr>
+                    <td> <a href="#display">Display</a></td>
+                    <td><span class="code">inline</span>, <span class="code">block</span>, <span class="code">inline-block</span></td>
+                    <td>Allows you to configure how the space of each element is occupied</td>
+                </tr>
+                <tr>
+                    <td> <a href="#float">Float</a></td>
+                    <td><span class="code">float</span></td>
+                    <td>Moves an element to the farthest left or right inside it's container</td>
+                </tr>
+                <tr>
+                    <td><a href="#clear">Clear</a></td>
+                    <td><span class="code">clear</span></td>
+                    <td>Specifies how elements should behave when they bump into each other on the page</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--HTML Descriptions-->
+        <img class="redblock" src="./Assets/CheatSheetHTMLHeader.png" alt="HTML">
+
+        <!--Headings-->
+        <h3 id="headings"><span class="subheaderhtml">| </span>Headings</h3>
+            <p>
+                Headings are used to help organize the page to make it easier to read. They take up their
+                own blocked area, and are bigger and bolder than normal text. You'll often see these be used as
+                titles for articles, section headings, and other stuff like that. <span class="code">&lt;h1&gt;</span> is the biggest, while 
+                <span class="code">&lt;h6&gt;</span> is the smallest! They're pretty easy to use too - you just need to use an opening tag 
+                and a closing tag, and put the text in between the two tags!
+                <br>
+                <strong>NOTE:</strong> it is often good practice to make sure your headings are ordered well. For example, try to avoid
+                doing something like using an <span class="code">&lt;h1&gt;</span> tag, then an <span class="code">&lt;h4&gt;</span> tag, then go back up to <span class="code">&lt;h2&gt;</span>. 
+                Instead, go in the order of <span class="code">&lt;h1&gt;</span>, <span class="code">&lt;h2&gt;</span>, <span class="code">&lt;h3&gt;</span>, then <span class="code">&lt;h4&gt;</span>. 
+                At the very least, <strong>always</strong> start with an <span class="code">&lt;h1&gt;</span> tag. There are a few reasons why we do this:
+            </p>
+            <ul>
+                <li>
+                    From a design standpoint, keeping headings in order makes it easier to read. It's like if you were to read
+                    a family tree that went from grandparents, to children, then parents. That ain't right. It's just confusing.
+                </li>
+                <li>
+                    It helps people who use screen readers! This is generally people who have visual, mobility, and cognitive 
+                    impairments. Properly ordered headings help these people understand the structure of the webpage. Some
+                    screen reader users heavily rely on using shortcuts to jump from heading to heading.
+                </li>
+                <li>
+                    It helps improve your website's Search Engine Optimization (SEO) ranking. Search engines like Google rely
+                    on page headings to understand the page's topic and how the information is optimized. SEO is an entire thing
+                    of it's own, but in short, the better your website's SEO, the higher it will show on a results page for a search
+                    engine. Great if you want more people to view your website!
+                </li>
+            </ul>
+            <img src="./Media/HeadingShowcase.png" alt="Diagram of HTML heading levels H1 to H6, with 
+            each level displayed in decreasing font size to show their visual hierarchy.">
+        
+        <!--Paragraphs-->
+        <h3 id="paragraphs"><span class="subheaderhtml">| </span>Paragraphs</h3>
+            <p>
+                Paragraphs are simply your basic bodies of text, like what you're reading now. They are used by simply
+                having an opening tag with a closing tag. ...hm. That's really all there is on paragraphs. Oh! I should
+                mention that HTML documents don't really treat whitespace in your code like they would in a word processor
+                like Microsoft Word. If you want to create a new paragraph, you would have to use the &lt;br&gt; tag to break
+                up your text. It also is a self-closing tag, so you don't need to add a closing tag. Pretty cool, huh?
+            </p>
+            <img src="./Media/ParagraphShowcase.png" alt="Diagram of how paragraph and line break elements work in HTML.">
+
+        <!--Lists-->
+        <h3 id="lists"><span class="subheaderhtml">| </span>Lists</h3>
+            <p>
+                There are two kinds of lists in HTML: Ordered lists and Unordered lists. Ordered lists create a list that is ordered.
+                (Duh.) These lists have the items numbered as you go down the list. Unordered lists, on the other hand, use bullets
+                for each item on the list. However, both lists are placed into HTML code the same way. You start with the opening
+                and closing tags, <span class="code">&lt;ul&gt;</span> and <span class="code">&lt;ol&gt;</span>, for unordered lists and ordered lists specifically. These tags let the computer
+                know that you want to make a list. Inside those tags, you use opening and closing tags for the element <span class="code">&lt;li&gt;</span>, or
+                "list item". You add another list item element for each item you want to add to the list!
+            </p>
+            <img src="./Media/OLShowcase.png" alt="Diagram of how ordered list elements work in HTML.">
+            <img src="./Media/ULShowcase.png" alt="Diagram of how unordered list elements work in HTML.">
+
+        <!--Images-->
+        <h3 id="images"><span class="subheaderhtml">| </span>Images</h3>
+            <p>
+                You probably noticed that there were images on this website. That's thanks to the <span class="code">&lt;img&gt;</span> tag! It's pretty self
+                explanatory on what it does. It is written a bit differently though. First off, it's self-closing, so you
+                don't need a closing tag. Second, you need to let the computer know what image you're trying to put in.
+                This is done through the <span class="code">src</span>, or source, attribute. Inside the opening tag, put <span class="code">src="Link of image here"</span>. Inside
+                the quotes, you can either use an image URL (which you are probably already familiar with), or a relative path.
+                A relative path means that the image is in the same file directory as your HTML file! To do this, start off with
+                "./", which places you in the same directory as the HTML file, then do the file path! So something like this:
+                <span class="code">src="./Media/LegoBatman.png"</span>. So again, here is how the code should be written: <span class="code">&lt;img src="image path here" /&gt;</span>
+                <br>
+                <br>
+                <strong>NOTE:</strong> When adding images, we generally want to try to add something called "alt text." This
+                is pretty much a brief text description of images and graphics. This helps people who uses screen readers
+                big time, as well as helps with your website's SEO. You should always try to add alt text to your images unless
+                the image doesn't actually contribute to the website's function, such as a background pattern image to make the
+                website look nice. Alt text can simply be added by adding the <span class="code">alt='Alt text here'</span> attribute to the opening tag!
+                Check out <a href="https://www.section508.gov/create/alternative-text/" target="_blank">this website</a> to learn how to write 
+                effective alt text.
+            </p>
+            <img class="batman" src="./Media/LegoBatman.png" alt="LEGO Batman">
+
+        <!--Videos-->
+
+        <h3 id="videos"><span class="subheaderhtml">| </span>Videos</h3>
+            <p>
+                To add a video you start off with a <span class="code">src</span> attribute in the opening tag similar to how you do with an image. It works the
+                same way as you would an image too - with a URL or a relative path. Check out the image section above if you're confused!
+                After that, however, things start to get a tad different. You want to indicate the size using <span class="code">width</span> and <span class="code">height</span> attributes,
+                then you have to decide if you want the video to have video controls. If you want to be able to control the video, just type
+                in the attribute, <span class="code">controls</span>! Enjoy this video of a LEGO Mindstorms robot making art! Noice noice. Oh! Also, in between
+                the opening and closing tags, you can put in text that will show up if the video somehow fails to load. This is usually
+                something like "Video not supported" or something like that. Also also, if you plan to use a YouTube video, YouTube
+                videos work a tad differently. If you do this method, the video might fail to load! But fear not - YouTube has included
+                a handy "embed" function on their website, generally found when you press the "share" button. Just paste in the code it
+                gives you and you're good to go!
+            </p>
+            <video src="./Media/LegoRobot.mp4" height="320" width="240" controls>
+                Video not supported
+            </video>
+
+        <!--div-->
+
+        <h3 id="div"><span class="subheaderhtml">| </span>div</h3>
+            <p>
+                The only time that you'll need to use <span class="code">div</span> elements are when you are styling with CSS. They're just a generic container.
+                You can wrap content inside of a <span class="code">div</span>, assign the <span class="code">div</span> a <span class="code">class</span> or <span class="code">id</span> (which is for CSS), then apply styling to it. Of
+                course, you'll want to use semantic tags if possible, but if there isn't a semantic tag that will work, then it's fine
+                to use divs. In fact, you'll see divs often in HTML.
+            </p>
+
+        <!--Tables-->
+
+        <h3 id="tables"><span class="subheaderhtml">| </span>Tables</h3>
+            <p>
+                Compared to the other elements we have in HTML, tables can get a little complicated. Before we get into how to add a table,
+                let's check out how tables are organized. A <strong>row</strong> is a line of data on a table that goes horizontally. A
+                <strong>column</strong> is a line of data on a table that goes vertically. The <strong>header</strong> of a table is at
+                the top of the table, which usually indicates the type of the data being presented. Sometimes, a table might have a
+                <strong>footer</strong> at the bottom of the table. This is generally used to total the numerical values you see in the table.
+            </p>
+            <img class="tableparts" src="./Media/PartsOfATable.png" alt="Annotated table showing store locations, number of employees, 
+            and sales per square foot, with labels identifying the header row, data rows, and total row.">
+            <p>
+                To start creating a table, start off with using an opening and closing <span class="code">&lt;table&gt;</span> tag. This just lets the computer
+                know we want to make a table. Next, we want to use <strong>semantic tags</strong> to help the computer recognize
+                which parts are the headers, which ones make up the table body, and which ones will be the footer. The semantic tags
+                don't have any visual representation, but will help out with stylizing the table when we start using CSS. You can read
+                the Semantic HTML section if you're confused!
+                <br>
+                <br>
+                If you want to have a table header, inside of the table opening and closing tags, use an opening <span class="code">&lt;thead&gt;</span> element.
+                This is a semantic tag. Inside of the <span class="code">&lt;thead&gt;</span> tags, you'll want to add opening and closing <span class="code">&lt;tr&gt;</span> tags.
+                This element stands for "table row," so it adds a new row! Inside of those tags, (this is the last one I promise) make table header cells by using the <span class="code">&lt;th&gt;</span> element. 
+                "th" just means "table header!" Add one for each cell of data you need. For example, if you want three heading cells, "Title," "Description," and "Price," you'll need three
+                <span class="code">&lt;th&gt;</span> elements.
+                <br>
+                <br>
+                Now, it's time for the body of the table. After the closing <span class="code">&lt;thead&gt;</span> tag, we want to add opening and closing <span class="code">&lt;tbody&gt;</span>
+                tags. Inside of those tags, you can start inputting your data! Inside of the table body element, add a <span class="code">&lt;tr&gt;</span> element
+                for each row that you want. Inside of each <span class="code">&lt;tr&gt;</span> element, you can add <span class="code">&lt;td&gt;</span> elements, which means "table data." So for
+                example, if you want a table with one row, which had three cells of data in that row, you would have one table row element with
+                three table data elements nested inside of it! You can also still use <span class="code">&lt;th&gt;</span> elements in the body if need be.
+                <br>
+                <br>
+                If you want a footer for your table, instead of using <span class="code">&lt;thead&gt;</span> or <span class="code">&lt;tbody&gt;</span>, you would use <span class="code">&lt;tfoot&gt;</span>! You would
+                input data the same way as the body. To put all of this together, this is what a table would look like in code:
+            </p>
+            <img src="./Media/TableCode.png" alt="Example of HTML table code structure.">
+            <img class="tableexample" src="./Media/TableImage.png" alt="Visual example of a formatted HTML table using the code from the previous image.">
+            <p>
+                ...okay, your table won't look this nice without some CSS, but hopefully it shows you what the code should look like. I should
+                also point out some additional things that you can do with tables. If you want a row or column cell to take up multiple areas
+                of space, you would use the attributes <span class="code">rowspan</span> and <span class="code">colspan</span>. For example, if you want some table
+                data to span two rows, you would do <span class="code">&lt;td rowspan="2"&gt;</span>. Finally, you may have noticed in the example above the <strong>scope</strong>
+                attribute. This is another piece of semantic HTML that lets the computer know that a certain table header applies to that entire
+                column. It helps people with screen readers and computers understand the relationship between cells in a table. It has no visual
+                representation.
+            </p>
+
+        <!--Semantic HTML-->
+
+        <h3 id="semantic"><span class="subheaderhtml">| </span>Semantic HTML</h3>
+            <p>
+                Semantic HTML are HTML elements or attributes that don't really have visual representation on their own, but they help provide
+                meaning to our code. Some common ones we see are <span class="code">&lt;header&gt;</span>, <span class="code">&lt;body&gt;</span>, and <span class="code">&lt;footer&gt;</span>. I like to view these terms like
+                folders, as they contain stuff from a certain section of that code. Another way you can think about it is like when you are
+                at a grocery store but you need to look for something specific. The store's aisles are labeled to help you look for what you
+                need easily. Here are some benefits you'll find when using semantic HTML:
+            </p>
+            <ul>
+                <li>The code will be easy to navigate. Need to find code related to the nav bar? Easy!</li>
+                <li>The website will be easier to stylize with CSS</li>
+                <li>The website's SEO will improve, as well as screen reader usability</li>
+            </ul>
+            <p>
+                List of semantic HTML:
+            </p>
+            <ul>
+                <li><span class="code">&lt;header&gt;</span></li>
+                <li><span class="code">&lt;nav&gt;</span></li>
+                <li><span class="code">&lt;main&gt;</span></li>
+                <li><span class="code">&lt;body&gt;</span></li>
+                <li><span class="code">&lt;section&gt;</span> (Similar to article, but for content that can't stand alone, needs context from the info around it)</li> 
+                <li><span class="code">&lt;article&gt;</span> (Used for pieces of content that can stand alone)</li>
+                <li><span class="code">&lt;figure&gt;</span> (Used for media)</li>
+                <li><span class="code">&lt;aside&gt;</span> (Used for stuff that is not needed to explain the main point of the content)</li>
+                <li><span class="code">&lt;footer&gt;</span></li>
+            </ul>
+            <img src="./Media/img_sem_elements.gif" alt="Diagram of a webpage layout using semantic HTML elements, including header,
+            navigation, section, article, aside, and footer.">
+
+        <!--Setting up an HTML Document-->
+
+        <h3 id="settingup"><span class="subheaderhtml">| </span>Setting up an HTML Document</h3>
+            <p>
+                There are some things you need to type out first if you want to start off an HTML document. First thing you'll
+                type is likely gonna be <span class="code">&lt;!DOCTYPE html&gt;</span>. All HTML documents start off with this, and they let the browser
+                know to expect an HTML document. If you want to be more technical, it helps prevent the browser from going into
+                "quirks mode." After that, you'll want to use the <span class="code">&lt;html&gt;</span> element, both it's opening and closing tags. This defines
+                the document as an HTML document. It's a "root" element, which means that this will encapsulate all of your HTML code. And
+                bam! You're ready to start coding.
+            </p>
+
+        <!--Links-->
+
+        <h3 id="links"><span class="subheaderhtml">| </span>Links</h3>
+            <p>
+                A characteristic part of the web is being able to click on links, which takes you elsewhere on the internet. This
+                is done through the <span class="code">&lt;a&gt;</span> element. Why "a?" "A" stands for "anchor." This is due to historical reasons, but you
+                can just call it a link. That being said, to use the <span class="code">&lt;a&gt;</span> element, you use opening and closing tags, and put in an
+                <span class="code">href</span> attribute to indicate where you want to send the user to when it's clicked. This is usually a URL.
+                <br>
+                <br>
+                Also, sometimes you want the user to come back to the page after they have viewed the link, so maybe you want the
+                browser to open up a new window for the link. To do this, you would add another attribute, "target," and set it to
+                "_blank." <a href="https://en.wikipedia.org/wiki/Cat">Here</a> is a link without the _blank target, 
+                while <a href="https://en.wikipedia.org/wiki/Cat" target="_blank">here</a> is a link with the _blank target! Notice
+                how that second link opened a new window in your browser? It helps make it easier to return to this page!
+                <br>
+                <br>
+                Finally, the <span class="code">&lt;a&gt;</span> tag doesn't apply to solely text. You can also add it to other things, like images! You do it
+                in the same exact way, just wrap the <span class="code">&lt;a&gt;</span> tag around an image.
+            </p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1" target="_blank"><img class="cat" src="./Media/Cat.avif" alt="Cat"></a>
+
+        <!--Classes and Ids-->
+
+        <h3 id="htmlclasses"><span class="subheaderhtml">| </span>Classes and IDs</h3>
+            <p>
+                I'm not gonna talk too much about classes and IDs in this section, as it's moreso related to CSS. You can find
+                the more detailed description of them in the CSS part of the cheat sheet, located <a href="#cssclasses">here</a>! But to incorporate them
+                into your HTML, you would add them as an attribute (<span class="code">class=""</span> or <span class="code">id=""</span>). However, something you can do with them
+                in HTML is make it so when you click a link, it will direct you to that space in the webpage. You simply give an
+                element, like a heading or a div, a class or ID, then you list that class or ID in the link's <span class="code">href</span> value, instead
+                of a URL. For classes, it would be <span class="code">.classname</span>, while for IDs it's <span class="code">#idname</span>.
+            </p>
+
+        <!--Commenting-->
+
+        <h3 id="commenting"><span class="subheaderhtml">| </span>Commenting</h3>
+            <p>
+                Commenting is very useful! It pretty much makes it so you can type what you want in your file without it being ran
+                by the computer. This means you can do things like make notes, organize your code, or "comment out" code so you
+                have a code snippet that isn't used in the program. In my case, I'm using comments right now to help organize my
+                sections to make it easier to read! Good job me! I'm so organized. Just don't look in my bedroom.
+            </p>
+            <img src="./Media/CommentShowcase.png" alt="An example of comments being used in code.">
+        
+        <!--Keeping your HTML Organized-->
+
+        <h3 id="organization"><span class="subheaderhtml">| </span>Keeping your HTML Organized</h3>
+            <p>
+                Keeping your code organized will help keep you and your fellow developers sane by making your code
+                more easily readable and digestible. HTML tends to be pretty lenient with how you write your code, so it can
+                sometimes be difficult to tell if you're putting in your code right. Here are some tips to help keep your code
+                readable:
+            </p>
+            <ul>
+                <li>
+                    Use semantic HTML! Even if you aren't using CSS. You'll be better able to identify what goes
+                    into which section and such, and you'll be able to find section content faster.
+                </li>
+                <li>
+                    Use indentations (usually around two spaces). Break down parent/child relationships in your code by using
+                    indentations. Try to keep things consistent.
+                </li>
+                <li>
+                    Use whitespace! HTML doesn't really care if you have whitespace in your code, so you can use this to help
+                    keep things organized in your code.
+                </li>
+            </ul>
+
+        <!--CSS Descriptions-->
+        <img class="blueblock" src="./Assets/CheatSheetCSSHeader.png" alt="CSS">
+
+        <!--Linking the CSS to the HTML-->
+        <h3 id="linkingcss"><span class="subheadercss">| </span>Linking the CSS to the HTML</h3>
+            <p>
+                In order for your CSS to actually work, you need to link it to your HTML file. You can do this through the
+                <span class="code">&lt;link&gt;</span> element. This is a self-closing element, so you don't need a closing tag. Make sure to add this
+                to your <span class="code">&lt;head&gt;</span> element! You'll then want to add an <span class="code">href</span> attribute so you can link to your CSS file. (It works the same as when you are adding an image). 
+                That should be it, right? Nope! You also need to add a <span class="code">rel</span> attribute, which stands for "relationship." Basically,
+                it describes the relationship between the HTML file and the CSS file. In this case, since we are linking to a
+                CSS file, we would set the <span class="code">rel</span> attribute to <span class="code">stylesheet</span>. And voila! Your CSS should work now! Here is what
+                the code should look like:
+                <br>
+                <br>
+                <span class="code">&lt;link href="link to CSS file" rel="stylesheet" /&gt;</span>
+            </p>
+
+        <!--Selectors-->
+        <h3 id="selectors"><span class="subheadercss">| </span>Selectors</h3>
+            <p>
+                In CSS, you are going to be styling certain elements of a webpage. But first, in order to style certain elements,
+                you need some way to "target" the thing you want to style. This is done through selectors!
+                <br>
+                <br>
+                <img src="./Media/SelectorShowcase.png" alt="A diagram showcasing where the selector in a CSS ruleset is.">
+                <br>
+                <br>
+                In this case, the programmer is targeting all <span class="code">&lt;link&gt;</span> elements in the HTML. They'll all become green!
+                You can also select classes and IDs. You can select certain classes through using <span class="code">.classname</span>, while IDs
+                can be selected through <span class="code">#idname</span>. If you want to select ALL of something, you would use <span class="code">*</span>. That's called
+                "universal."
+                <br>
+                <br>
+                Attributes can be selected too. You can do this by putting in the attribute name and wrapping it in [square brackets],
+                like this: <span class="code">[href]</span>. In this example, all elements with an <span class="code">href</span> attribute will be selected!
+                <br>
+                <br>
+                There are also <strong>pseudo-classes.</strong> These are helpful for when you want certain elements to change or be in a different
+                state after certain user interactions. Have you noticed that when you click on blue links, they tend to change to purple
+                after you revisit that page? That's a pseudo-class! Or maybe you noticed when you're trying to fill out a form, but the
+                "submit" button is greyed out until you fill out the entire form? Don't forget there is the times when you hover over a button
+                and it changes to a different color! Some examples include, <span class="code">:hover</span>, <span class="code">:focus</span>, <span class="code">:visited</span>, 
+                <span class="code">:disabled</span>, and <span class="code">:active</span>. They can be attached to any selector. For example, take a look at this code:
+                <br>
+                <br>
+                <img src="./Media/PseudoclassExample.png" alt="Example of a pseudo-class being used in code.">
+                <br>
+                <br>
+                In this example, when the mouse hovers over any <span class="code">&lt;p&gt;</span> element, the paragraph will have a lime-colored background!
+                <br>
+                <br>
+                Okay, so what if you want to select an HTML element that require two or more CSS selectors at the same time? You can do this
+                through <strong>chaining.</strong> If you were to type in <span class="code">h1.special</span> as the selector, for example, the CSS would select <span class="code">h1</span> elements
+                that <em>also</em> have the "special" class. (Classes and IDs have their own section, so feel free to check that out)
+                <br>
+                <br>
+                Next, there are <strong>descendent combinators.</strong> These are used if you want to select elements that are nested inside of other
+                elements. For instance, if you want to select list items in an ordered/unordered list, you can input <span class="code">ol/ul li {}</span>. This will target the
+                list items in the ordered/unordered list!
+                <br>
+                <br>
+                Finally, you can have multiple selectors inside a CSS ruleset. Instead of doing:
+                <br>
+                <br>
+                <img src="./Media/MultipleSelectors1.png" alt="Example of separate selectors in a CSS ruleset.">
+                <br>
+                <br>
+                You could do this instead:
+                <br>
+                <br>
+                <img src="./Media/MultipleSelectors2.png" alt="Example of the same selectors above being used in one ruleset.">
+                <br>
+                <br>
+                Phew. That was a lot for selectors. As a summary:
+                </p>
+                <ul>
+                    <li>The most basic form of selecting is just by inputting the element name, class, or ID.</li>
+                    <li>You can select attributes by using [].</li>
+                    <li><span class="code">*</span> selects ALL of something.</li>
+                    <li>You can have multiple selectors in one ruleset by separating them with a comma.</li>
+                    <li>Chaining is when you select HTML elements that have multiple selectors at the same time. They look like this: <span class="code">h1.special</span></li>
+                    <li>You can select nested HTML elements by putting in the parent elements name, then inputting a space, then putting in the nested elements name.</li>
+                </ul>
+
+        <!--Classes and IDs-->
+
+        <h3 id="cssclasses"><span class="subheadercss">| </span>Classes and IDs</h3>
+            <p>
+                Classes and IDs pretty much give HTML elements a certain name so you can refer to them in your HTML and CSS. The difference between them lies in their
+                <strong>specificity.</strong> (I'm still having troubles saying that word...) The specificity order goes in this order, from least specific
+                to most specific:
+            </p>
+            <ol>
+                    <li>Element name (<span class="code">p</span>, <span class="code">h1</span>, etc.)</li>
+            <li>Classes (<span class="code">.classname</span>)</li>
+                <li>IDs (<span class="code">#idname</span>)</li>
+                <li><span class="code">!important</span></li>
+            </ol>
+            <p>
+                The more specific the selector, the higher priority it gets when it gets assigned a ruleset. As an example, if there were two CSS rulesets
+                that changed the color of h1 elements, but one had an ID name, the one with the ID name would get the priority. Generally, it's good practice to
+                be as least specific as you can - so stick with the element names unless it's more ideal to use a class or ID. This is because if you just go around
+                the CSS giving every class and ID a CSS ruleset, it's gonna be a heckin' pain to style. In fact, things like <span class="code">!important</span> should rarely be used unless
+                you <em>really</em> need to make that element stand out. And when you do use classes and IDs, give them names that are easy to follow.
+            </p>
+
+        <!--Typography-->
+
+        <h3 id="typography"><span class="subheadercss">| </span>Typography</h3>
+            <p>
+                This section will give you the basic rulesets you need to know when you want to deal with typography.
+            </p>
+            <ul>
+                <li><span class="code">font-family</span> allows you to change the font. Put it in quotes if the font name has multiple words!</li>
+                <li><span class="code">font-weight</span> changes how bold or thin the text appears. You can change it to bold or normal. But you can
+                also use "bolder" or "lighter," which changes the font value 1 time higher or lower. It can range from 1 to 1000.</li>
+                <li><span class="code">font-style</span> can be used to change the font to italics. You can set this to italic or normal.</li>
+                <li><span class="code">text-transform</span> can be used control the capitalization of text. You can set it to "uppercase"
+                for all uppercase letters or "lowercase" for all lowercase letters.</li>
+                <li><span class="code">letter-spacing</span> is used to set the space between characters. Feel free to use px or em!</li>
+                <li><span class="code">word-spacing</span> is used to set the space between words. While you could use px for this, it's recommended
+                to use em because the sizing will be relative to the size of the font.</li>
+                <li><span class="code">line-height</span> changes, well, the line height. This can be a unitless number, too!</li>
+                <li><span class="code">text-align</span> sets how the text is horizonatally aligned within it's container. Some common ones include
+                left, right, center, and justify.</li>
+            </ul>
+            <p>
+                <Strong>Using fonts from the web:</Strong> There are two ways you can use fonts from the web: using the <span class="code">&lt;link&gt;</span> element or
+                by using <span class="code">@font-face</span>. Use <span class="code">&lt;link&gt;</span> if you want to embed something directly from a website, like Google Fonts. Once you find
+                the font you want, copy the embed code from the website, then paste it inside the <span class="code">&lt;head&gt;</span> element inside of your HTML, like this:
+                <br>
+                <br>
+                <img src="./Media/Typography1.png" alt="An example of a Google Fonts font being embedded into the Head element of HTML code.">
+                <br>
+                <br>
+                Once that's in, you just need to set the <span class="code">font-family</span> ruleset in your CSS!
+                <br>
+                <br>
+                <img src="./Media/Typography2.png" alt="An example of a font family ruleset being used for a Google Fonts typeface.">
+                <br>
+                <br>
+                There is also the <span class="code">@font-face</span> ruleset, which doesn't involve your HTML at all. This is good if you actually have the downloaded
+                font file on your computer. There are a few kinds of font files that you'll find:
+            </p>
+            <ul>
+                <li>WOFF2 (Web Open Font Format 2)</li>
+                <li>WOFF (Web Open Font Format)</li>
+                <li>TTF (TrueType Font)</li>
+                <li>OTF (OpenType Font)</li>
+            </ul>
+            <p>
+                WOFF2 is probably the one you want to use the most, but try to include these other font file types to make sure it works with as
+                many browsers as possible. When you have the files you need, make sure they are in your website's working directory, then you can
+                use the <span class="code">@font-face</span> ruleset to include them into your code like so:
+                <br>
+                <br>
+                <img src="./Media/Typography3.png" alt="An example of the @font-face ruleset being used in CSS.">
+                <br>
+                <br>
+                Make sure that this is at the top of your CSS style sheet! And inside of the font-family ruleset, you want to write down a name for
+                the font. This can be anything! The order that you place the the <span class="code">src</span>'s are important too, since the top ones tend to be more prioritized.
+                Follow the order that I set from the list above, starting from WOFF2 down to OTF. Now you can just apply it into your CSS the same
+                way we did with the <span class="code">&lt;link&gt;</span> method! Nice!
+                <br>
+                <br>
+                You may have noticed in some of the examples above, multiple fonts were used in <span class="code">font-family</span>. What this does is that if the first
+                font fails to load for whatever reason (maybe the font isn't available on the computer), it will move to the next font. <a href="https://www.cssfontstack.com/" target="_blank">
+                Here</a> is a website that shows a list of web-safe fonts. Eventually, the font stack can end with a simple "serif" or "sans-serif"!
+            </p>
+
+        <!--Colors-->
+
+        <h3 id="colors"><span class="subheadercss">| </span>Colors</h3>
+            <p>
+                There are multiple ways to select a color in CSS. The easiest way is to use <a href="https://www.tutorialrepublic.com/css-reference/css-color-names.php" target="_blank">named colors.</a> 
+                These are just English names for a certain color. However, this can get pretty limited, so if you want access to the widest array
+                of colors available, you can use hexadecimal or RGB values. I'm not gonna dive into how they work here, but hexadecimal values are
+                inputted as <span class="code">#01234A</span> and RGB values are inputted as <span class="code">rgb(01, 02, 03)</span>. Which one you use is up to preference! That being said, there is
+                one more way to input a color value, which is through <span class="code">hsl</span> (Hue, Saturation, and Brightness). It is input as <span class="code">hsl(Number value, Percent, Percent)</span>.
+                <br>
+                <br>
+                Also, you can add opacity to the mix! This is referred to as the "alpha" value. You put this in as an extra "a" at the end of <span class="code">rgb</span> or <span class="code">hsl</span>.
+                So, it'll be <span class="code">rgba (0, 0, 0, 0)</span> OR <span class="code">hsla (Number value, Percent, Percent, Number value)</span>. Opacity will be a value between 0 and 1, with
+                0 being completely transparent and 1 being fully opaque. You <em>can</em> do this with hexadecimal as well, but it's a bit awkward, so it's
+                a bit unconventional. You add two numbers to the end of it with 00 being fully transparent and FF being fully opaque.
+                <br>
+                <br>
+                Oh, I should also point out that there are two ways to change the color of something: through it's <span class="code">color</span> value, or through it's <span class="code">background-color</span> value!
+            </p>
+            <img class="colorwheel" src="./Media/Color.png" alt="Color wheel">
+
+        <!--Background Image-->
+
+        <h3 id="backgroundimage"><span class="subheadercss">| </span>Background Image</h3>
+            <p>
+                <span class="code">background-image</span> changes the image of the background, which is pretty self-explantory. To use it, you would do
+                <span class="code">background-image: url("image")</span>!
+            </p>
+
+        <!--!important-->
+
+        <h3 id="important"><span class="subheadercss">| </span>!important</h3>
+            <p>
+                <span class="code">!important</span> is the most specific selector there is. Because of this, you want to avoid using this when you can unless
+                it's really necessary! You can learn more about specificity in <a href="#cssclasses">Classes and IDs</a>.
+            </p>
+
+        <!--Box Model-->
+
+        <h3 id="boxmodel"><span class="subheadercss">| </span>Box Model</h3>
+            <p>
+                The box model is a framework that indicates how HTML elements are structured and displayed in a browser.
+                <br>
+                <br>
+                <img src="./Media/BoxModel.png" alt="A diagram of the box model seen in HTML and CSS">
+                <br>
+                <br>
+                There are four big elements of the Box Model. The <strong>content</strong> is the actual content of the HTML element.
+                So, maybe it's the text you put in, or maybe it's an image. Next is the <strong>padding</strong>, which is the space just outside
+                of the content, but inside of the borders of the box. The <strong>frame</strong> is what it sounds like - it's the frame of the
+                box! And finally, there is the <strong>margins</strong>. This is the space just outside of the frame. I suppose it would be easier
+                to understand through an example. Take a look at this cool LEGO set based on <em>The Great Wave</em> by Hokusai!
+                <br>
+                <br>
+                <img class="greatwave" src="./Media/BoxExample.jpg" alt="A real-life example of the box model in action">
+                <br>
+                <br>
+                Hopefully this gives you a good idea of how the box model works! If you wanted to change the size of any of these properties,
+                you can do so for any size. While you could use things like <span class="code">margin-left</span> or <span class="code">padding-right</span>, you can more easily set the sizing
+                by using either <span class="code">(ruleset) # # # #</span> (up, right, down, left) or <span class="code">(ruleset) 0 0</span> (top/bottom, sides)
+                <br>
+                <br>
+                It's also important to bring up some awkward complications when coming up with specific sizes for a boxed element. Let's say you
+                want a box that's exactly 300 pixels wide and tall. Even if you put in 300 pixels for the height and width, <strong>it's gonna be a bit larger
+                because you have to account for the padding and border sizes.</strong> Well, it turns out that there are two kinds of box models: the content-box
+                and the border-box! The default is the content box, but if you change it to a border box using the <span class="code">box-sizing</span> ruleset, you can make it so
+                it's easier to get those exact 300 pixels! In this case, you're just resizing the border of the box, so it's easier to get the size you want!
+            </p>
+
+        <!--Position-->
+
+        <h3 id="position"><span class="subheadercss">| </span>Position</h3>
+            <p>
+                There are five kinds of positioning that you'll often see in websites: <span class="code">static</span>, <span class="code">relative</span>, 
+                <span class="code">absolute</span>, <span class="code">fixed</span>, and <span class="code">sticky</span>.
+                <strong>Static</strong> is the default one. When attached to an element, it just moves along with the page like normal.
+                <br>
+                <br>
+                <video src="./Media/static.mp4" height="240" width="320" controls>
+                    Video not supported
+                </video>
+                <br>
+                <br>
+                <strong>Relative</strong> is pretty similar to static, but you can position the element, relative to it's default static
+                position through using "top", "left", "right", and "bottom." In fact, there will be absolutely no difference with
+                static if you don't do that like I show in the video below. You'll find that the other positions can use these values too!
+                <br>
+                <br>
+                <video src="./Media/relative.mp4" height="240" width="320" controls>
+                    Video not supported
+                </video>
+                <br>
+                <br>
+                <strong>Absolute</strong> will take the element outside of the document's flow. Outside of that, it works the same way
+                as relative.
+                <br>
+                <br>
+                <video src="./Media/relative.mp4" height="240" width="320" controls>
+                    Video not supported
+                </video>
+                <br>
+                <br>
+                <strong>Fixed</strong> is especially useful. It will keep the element glued to where it's at on the screen, no matter
+                how you scroll. It will stay there no matter how fast you scroll! (Don't try it as fast as I did; I've tried doing it and I wasn't able
+                to go fast enough to break fixed.) This is great for navigation bars and headers.
+                <br>
+                <br>
+                <video src="./Media/fixed.mp4" height="240" width="320" controls>
+                    Video not supported
+                </video>
+                <br>
+                <br>
+                Finally, there is <strong>sticky.</strong> This one is pretty cool. The element will scroll like normal until the element is almost off-screen.
+                After that, it will be fixed until you scroll back to it's normal position.
+                <br>
+                <br>
+                <video src="./Media/sticky.mp4" height="240" width="320" controls>
+                    Video not supported
+                </video>
+                <br>
+                <br>
+            </p>
+
+        <!--Display-->
+
+        <h3 id="display"><span class="subheadercss">| </span>Display</h3>
+            <p>
+                <span class="code">Display</span> sets whether an HTML element is treated as a block or inline. What are blocks and inlines, you say? Depending
+                on which you use, it may effect the spacing of elements on your webpage. Have you noticed that when you put in something like a
+                heading, the content blocks everything on that line, even if the content doesn't fill up that whole section? That's a block! They
+                Tend to make content go vertical, despite their being enough space on the left or right.
+                <br>
+                <br>
+                Inline makes it so content can share space in one line, so something like you would see in a navigation bar. Each button element
+                takes up it's own space horizontally, so it's inline! Finally, there is inline block, which takes the best of both worlds!
+                <br>
+                <img class="displayimage" src="./Media/Blocks.png" alt="Diagrams showcasing block, inline, and inline block.">
+            </p>
+        
+        <!--Float-->
+
+        <h3 id="float"><span class="subheadercss">| </span>Float</h3>
+            <p>
+                <span class="code">Float</span> moves the selected element to the left or right as far as possible within it's container. You use either <span class="code">float: left</span> or
+                <span class="code">float: right</span>! Floated elements must have a width specified. Otherwise, the element will assume the full width of it's containing
+                element, and changing the float value will not yield any visible results.
+            </p>
+
+        <!--Clear-->
+
+        <h3 id="clear"><span class="subheadercss">| </span>Clear</h3>
+            <p>
+                Sometimes, when you use something like <span class="code">float</span> on multiple elements, elements will sorta "bump" into each other, and not allow elements
+                to move in the way you want. <span class="code">Clear</span> sets how elements should behave when this happens. You can set it to left, right, both,
+                or none. This sets it so that whatever side you chose for the element will not touch any other element within the same container.
+            </p>
+        <footer>
+            <a href="#greenblock"><img class="upbutton" src="./Assets/CheatSheetUp.png" alt="Go to top"></a>
+        </footer>
+    </main>
+</body>
+</html>
